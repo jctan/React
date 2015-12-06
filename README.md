@@ -10,3 +10,7 @@
 - Unmounting: componentWillUnmount (calls before a component is unmounted from the DOM + clearn up after React component gets destroy. )
 - Updating: componentWillReceiveProps; shouldComponentUpdate; componentWillUpdate; componentDidUpdate
 - Used Flux architecture with React to build web apps (single direction data flow architecture with specific events and listeners: Action -> Dispatch -> Store -> View -> Action) - great for dynamic data applications
+- dispatcher register a callback for data to flow from action through the dispatcher into the store. dispatcher doesn't know about the store and it only knows it has a callback to call at a specific time. 
+- The view will pull the data from the store. 
+- store register a callback with dispatcher 
+- store can decide what data to update through the payload
